@@ -109,7 +109,6 @@ module ActiveMerchant #:nodoc:
               end
 
               xml.tag! 'n2:BuyerEmail', options[:email] unless options[:email].blank?
-              xml.tag! 'n2:InvoiceID', options[:order_id]
               
               if options[:billing_agreement]
                 xml.tag! 'n2:BillingAgreementDetails' do
